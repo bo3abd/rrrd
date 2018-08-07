@@ -19,7 +19,7 @@ console.log(`[M] ${client.users.size}`)
 });
 
 
-const prefix = "7"
+const prefix = "."
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -212,8 +212,8 @@ function play(guild, song) {
 
 
 
-const adminprefix = "7";
-const devs = ['415649344864387072'];
+const adminprefix = ".";
+const devs = ['472052319006228509''472052319006228509'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -231,8 +231,8 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
-if (message.content.startsWith(adminprefix + 'setT')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+if (message.content.startsWith(adminprefix + 'sets')) {
+  client.user.setGame(argresult, "https://www.twitch.tv/vvrrkk");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 
